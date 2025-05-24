@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #fefefe, #f9f4ff);
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    line-height: 1.6;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #a87cb0;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(168, 124, 176, 0.2);
+}
+
+h2, p.intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.artwork {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(180, 160, 200, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artwork:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(180, 160, 200, 0.35);
+}
+
+.artwork img {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #e9e3f1;
+}
+
+.caption {
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #777;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
